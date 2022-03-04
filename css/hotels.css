@@ -1,0 +1,136 @@
+.hotels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 450px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+.hotel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 150px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid var(--basic-biege);
+    width: 100%;
+    }
+.hotel-item img {
+      width: 135px;
+      height: 90px;
+      margin-top: 29px;
+      margin-left: 72px;
+      margin-right: 29px;
+    }
+.discription {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.content h3{
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 7px;
+  }
+.content p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 16px;
+    }
+.rating {
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+  }
+.rating-value {
+    min-height: 24px;
+    width: 110px;
+    margin-left: 522px;
+    margin-bottom: 30px;
+    padding-top: 3px;
+    padding-left: 3px;
+    text-align: center;
+    color: var(--basic-grey);
+    background-color: var(--basic-beige);
+    font-size: 14px;
+    font-weight: normal;
+  }
+.rating {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+.amara-rating{
+    position: relative;
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+.amara-rating::before {
+    content:"★ ★ ★ ★";
+    display: block;
+    color: var(--basic-deepblue);
+  }
+.desert-rating{
+    position: relative;
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+.desert-rating::before {
+    content:"★ ★ ★";
+    display: block;
+    color: var(--basic-deepblue);
+  }
+.villas-rating{
+    position: relative;
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+.villas-rating::before {
+    content:"★ ★";
+    display: block;
+    color: var(--basic-deepblue);
+  }
+.button-hotels{
+    display: inline-block;
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+    background-color: var(--basic-lightblue);
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 21px;
+    position:relative;
+    padding-top: 3px;
+    padding-right: 17px;
+    padding-bottom: 3px;
+    padding-left: 17px;
+    }
+.button-hotels:hover,
+.button-hotels:focus {
+    background-color: var(--basic-blue);
+    }
+.button-hotels:active {
+    background-color: var(--basic-darkblue);
+    }

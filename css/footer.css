@@ -1,0 +1,115 @@
+.main-footer {
+    background-color: var(--basic-white);
+    background-position: 0 0;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing:border-box;
+    margin-left: 153px;
+    margin-top: 12px;
+    margin-bottom: 36px;
+    margin-right: 153px;
+    padding: 0;
+  }
+.contacts p {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    align-items: center;
+  }
+.footer-social {
+    text-align: center;
+  }
+.footer-social ul {
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-left: 80px;
+  }
+.footer-social li {
+    margin-right: 6px;
+  }
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    background-color: var(--basic-lightblue);
+    color: inherit;
+  }
+.social-button:hover {
+  background-color: var(--basic-blue);
+}
+.socail-button:focus {
+    background-color: var(--basic-darkblue);
+  }
+.social-button:active {
+    background-color: var(--basic-darkblue);
+  }
+.logo-academy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.logo-footer {
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.text-website {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  background: rgba(255, 255, 255, 0.9);
+  margin-right: 10px;
+  }
+.map img {
+  margin-bottom: -4px;
+}
+.logo-academy a {
+    background: ul(../img/logo-htmlacademy.svg);
+}
+  .offers-button {
+    display:block;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 124px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color:var(--basic-white);
+    text-transform: uppercase;
+    border:none;
+    background-color:var(--basic-lightbrown);
+
+    width: 568px;
+    height: 86px;
+  }
+  .offers-button:hover {
+    background-color:var(--basic-brown);
+    color: var(--basic-white);
+    border:none;
+  }
+
+  .offers-button:focus {
+  background-color:var(--basic-darkbrown);
+  color: var(--basic-lightbrown);
+  border:none;
+  }
+  .offfers-button:active {
+    background-color:var(--basic-darkbrown);
+    color: var(--basic-white);
+    border:none;
+  }

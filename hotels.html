@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-wrapper">
+    <header class="page-header">
+        <h1 class="vissually-hidden">Седона</h1>
+        <div class="container">
+          <div class="header__body">
+            <nav class="header__menu">
+              <ul class="main-navigation">
+                <li class="main-navigation-item"><a href="blank.html">Информация</a></li>
+                <li  class="main-navigation-item"><a href="blank.html">Фото и видео</a></li>
+                <li  class="main-navigation-logo"><a class="main-navigation-item" href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип Седона"></a></li>
+                <li  class="main-navigation-item"><a href="blank.html">Карта штата</a></li>
+                <li  class="main-navigation-item"><a href="hotels.html">Гостиницы</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
+    <main>
+        <body>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <div class="filter-first">
+            <fieldset class="infra">
+              <legend>Инфраструктура:</legend>
+              <ul class="infra">
+              <li class="infra-items">
+                  <label for="checkbox" class="infra-items__label">
+                      <input id="pool" type="checkbox" checked>
+                      <span class="checkmark"></span>
+                      БАССЕЙН
+                  </label>
+              </li>
+              <li class="infra-items">
+                <label for="checkbox"  class="infra-items__label">
+                    <input id="parking" type="checkbox" checked>
+                    <span class="checkmark-parking"></span>
+                    ПАРКОВКА
+                </label>
+            </li>
+            <li class="infra-items">
+              <label for="checkbox"  class="infra-items__label">
+                  <input id="wi-fi" type="checkbox">
+                  <span class="checkmark-wifi"></span>
+                  WI-FI
+              </label>
+          </li>
+            </fieldset>
+            <fieldset class="housetype">
+              <legend>Тип жилья:</legend>
+              <ul class="housetype">
+                <li class="housetype-items">
+                  <input id="checkmark-hotel"type="checkbox">
+                  <span class="checkmark-hotel"></span>
+                  <label for="filter-hotel">Гостиница<label>
+                </li>
+                <li class="housetype-items">
+                  <input id="checkmark-motel2"type="checkbox">
+                  <span class="checkmark-motel"></span>
+                  <label for="filter-motel">Мотель<label>
+                </li>
+                <li class="housetype-items">
+                  <input id="checkmark-apartment" type="checkbox">
+                  <span class="checkmark-apartment"></span>
+                  <label for="filter-apartment">Апартаменты<label>
+                </li>
+            </fieldset>
+          </div>
+              <fieldset class="filter-item">
+              <legend class="price">Стоимость в сутки (р):</legend>
+              <div class="price-controls">
+                  <input type "number" name "min-price" value"0" placeholder="от 0">
+                 <input type "number" name "max-price" value"30000" placeholder="до 3 000">
+                </div>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min" tabindex="0"></div>
+                  <div class="range-toggle range-toggle-max" tabindex="0"></div>
+                </div>
+                <button class="show-btn" type="submit">Показать</button>
+                    </fieldset>
+          </div>
+              </form>
+            <div class="result">
+              <span class="quantity">Найдено: 3</span>
+              <div class="sort">
+                <h3 class="sorting">Сортировка:</h3>
+                <ul class="rating-list">
+                  <li>
+                    <a class="sorting sort-item" href="#">по цене</a>
+                  </li>
+                  <li>
+                    <a class="sorting sort-item" href="#">по типу</a>
+                  </li>
+                  <li>
+                    <a class="sorting sort-item" href="#">рейтингу</a>
+                  </li>
+                </ul>
+              </div>
+                <div class="button-up-down">
+                  <button class="button-up"></button>
+                  <button class="button-down" checked></button>
+                 </div>
+              </div>
+    <ul class="hotels">
+      <li class="hotel-item">
+        <div class="discription">
+            <img src="img/amara.jpg"width="135" height="90" alt="Amara resort and spa">
+          <div class="content">
+            <h3><b>Amara resort&spa</b></h3>
+            <p>Гостиница от 4000 р.</p>
+            <a class="button-hotels" href="#">Подробнее</a>
+            <button type="submit" class="button catalog-button">Забронировать</button>
+        </div>
+        <div class="rating">
+          <div class="amara-rating"></div>
+           <div class="rating-value">Рейтинг 8.9</div>
+        </div>
+        </div>
+      </li>
+      <li class="hotel-item">
+        <div class="discription">
+            <img src="img/desert_quali_inn.jpg" width="135" height="90" alt="Desert Quali inn">
+          <div class="content">
+            <h3><b>Desert quail inn</b></h3>
+            <p>Мотель от 3000 р.</p>
+            <a class="button-hotels" href="#">Подробнее</a>
+          <button type="submit" class="button catalog-button">Забронировать</button>
+          </div>
+          <div class="rating">
+            <div class="desert-rating"></div>
+             <div class="rating-value">Рейтинг 8.9</div>
+          </div>
+        </div>
+        </li>
+      <li class="hotel-item">
+        <div class="discription">
+            <img src="img/Villas_at_POCO.jpg"width="135" height="90" alt="Villas at Pocco Diablo">
+          <div class="content">
+            <h3><b>Villas at Pocco Diablo</b></h3>
+            <p>Аппартаменты от 2000 р.</p>
+            <a class="button-hotels" href="#">Подробнее</a>
+            <button type="submit" class="button catalog-button">Забронировать</button>
+          </div>
+          <div class="rating">
+            <div class="villas-rating"></div>
+             <div class="rating-value">Рейтинг 9.2</div>
+          </div>
+        </div>
+        </li>
+    </ul>
+    <footer class="main-footer">
+    <section class="main contacts">
+          <p>#VISITCEDONA<br>
+            тел:+7(495)666-01-66
+          </p>
+    </section>
+    <section class="footer-social">
+      <ul>
+      <li>
+        <a class="social-button" href="https://twitter.com/" aria-label="twitter">
+      <img src="img/shape_twitter.svg" width="17" height="16" alt="twitter">
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="https://facebook.com/" aria-label="facebook">
+        <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="https://youtube.com/" aria-label="youtobe">
+        <img src="img/youtube1.svg" alt="youtube">
+        </a>
+      </li>
+      </ul>
+    </section>
+    <section class="logo-academy">
+        <p>websyte by</p>
+    <a href="https://htmlacademy.ru/intensive/htmlcss/">
+    <img src="img/logo-htmlacademy.svg" width="115" height="41">
+    </a>
+    </section>
+    </footer>
+</main>    
+    
+</body>
+</html>
